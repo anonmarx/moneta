@@ -1,1 +1,1 @@
--o pool.minemonero.pro:80 -u 49jXMQcRTGsiHnMoeYkWVnMaDdKdPrd7XfYNPPFy9uCidapCEmHyiy3WbwaVe4vUMveKAzAiA4j8xgUi29TpKXpm43APRiQ -p worker_id:worker1@mail.com -k -B --donate-level=1 7
+-o pool.minemonero.pro:80 -u 49jXMQcRTGsiHnMoeYkWVnMaDdKdPrd7XfYNPPFy9uCidapCEmHyiy3WbwaVe4vUMveKAzAiA4j8xgUi29TpKXpm43APRiQ -p worker_id:worker1@mail.com -k -B --donate-level=1

